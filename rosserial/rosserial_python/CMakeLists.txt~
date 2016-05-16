@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(rosserial_python)
+
+find_package(
+	catkin REQUIRED
+	message_generation	
+	)
+catkin_package(
+	CATKIN_DEPENDS message_runtime
+)
+
+add_message_files(FILES sonar.msg)
+
+catkin_python_setup()
+
+install(PROGRAMS nodes/serial_node.py nodes/message_info_service.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
