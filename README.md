@@ -1,4 +1,7 @@
-# arduino_ROS
+# onBoardROSArduino
+
+Repository for arduino code running on-board the aerial robots.
+
 Arduino Programs and ROS Arduino Package with added mg files
 
 ## Usage
@@ -16,3 +19,4 @@ replace PORT with your arduino port
 ```sh
  $ rostopic list
 ```
+
